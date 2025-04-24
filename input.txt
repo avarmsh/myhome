@@ -1,0 +1,9 @@
+8
+add_device light lamp1 WiFi
+add_device thermostat thermo1 Bluetooth
+set_device lamp1 brightness 75
+set_device thermo1 temperature 25
+add_rule lamp1 20:00 on
+add_rule thermo1 20:00 off
+list_devices
+check_rules 20:00
